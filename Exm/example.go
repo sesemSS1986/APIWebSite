@@ -1,11 +1,14 @@
-package ApiWebSite
+package main
 
-import "log"
+import (
+	api "github.com/sesemSS1986/APIWebSite"
+	"log"
+)
 
 func main() {
 
-	c := Client{
-		Url:   "http://localhost:1323",
+	c := api.Client{
+		Url:   "http://http://90.156.208.193:8192/",
 		Token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRtaW4iLCJhZG1pbiI6dHJ1ZSwiZXhwIjoxNzEzNDI3MDg1fQ.ecbIV7kyj6l31HnFLDfSX_Zr1ybMSmfnP4YlDkKcNQY",
 	}
 

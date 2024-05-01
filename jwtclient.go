@@ -44,6 +44,7 @@ type OrdersAP struct {
 	Date        string `json:"date"`
 }
 
+// Method fo get user information
 func (c Client) GetUser() []UsersAP {
 	var resdata = make(map[string][]UsersAP)
 
@@ -73,6 +74,7 @@ func (c Client) GetUser() []UsersAP {
 	return resdata["user"]
 }
 
+// Method fo get shop position
 func (c Client) GetShop() []ShopPositionAP {
 	var resdata = make(map[string][]ShopPositionAP)
 
@@ -102,6 +104,7 @@ func (c Client) GetShop() []ShopPositionAP {
 	return resdata["shop"]
 }
 
+// Method fo get basket position from all users
 func (c Client) GetBasket() []BasketAP {
 	var resdata = make(map[string][]BasketAP)
 
@@ -131,6 +134,7 @@ func (c Client) GetBasket() []BasketAP {
 	return resdata["basket"]
 }
 
+// Method fo get order all users
 func (c Client) GetOrders() []OrdersAP {
 	var resdata = make(map[string][]OrdersAP)
 
